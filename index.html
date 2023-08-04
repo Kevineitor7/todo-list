@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-container">
+            <div class="project-list">
+                <h2>Projects</h2>
+                <div class="projects">
+                    <div class="project active">
+                        <div class="project-name">Project 1</div>
+                    </div>
+                </div>
+                <button class="project-add">+</button>
+            </div>
+            <div class="todo-list">
+                <h2 class="todo-list-header">Todo List</h2>
+                <div class="todos">
+            <!---   <div class="todo">
+                        <div class="todo-info">
+                            <div class="todo-title">Cagar</div>
+                            <div class="todo-date">Jul 31, 2023</div>
+                            <div class="todo-priority">Priority: High</div>
+                            <div class="todo-options">
+                                <button class="details">See details</button>
+                                <button class="remove-todo">Remove</button>
+                            </div>
+                        </div>
+                        <div class="todo-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reprehenderit deserunt, 
+                            eligendi, nisi qui natus velit cum voluptatibus ad odio assumenda nemo qui. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Eos molestiae saepe culpa ea illo? Molestiae, dolore.
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="add-todo">
+            <h2>Add Todo</h2>
+            <div class="add-form">
+                <form id='form' action="" method="get">
+                    <label for="title">Title:*</label>
+                    <input type="text" name="title" id="title" maxlength="60" required>
+                    <label for="date">Due Date:*</label>
+                    <input type="date" name="date" id="date">
+                    <label for="priority">Priority:</label>
+                    <select id="priority" name="priority">
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>                        
+                        <option value="low">Low</option>
+                    </select>
+                    <label for="description">Description: (320 characters)</label>
+                    <textarea name="description" id="description" rows="4" maxlength="320" style="resize:none;"></textarea>
+                    <button id="submit-todo" type="submit" value="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
